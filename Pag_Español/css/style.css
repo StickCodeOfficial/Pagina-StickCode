@@ -657,7 +657,7 @@ footer{
 }
 /*Btn Mas De Mi*/
 
-/*Prueba*/
+/*Form Contacto*/
 .form-container {
     width: 700px;
     background: linear-gradient(#212121, #212121) padding-box,
@@ -675,7 +675,6 @@ footer{
     background-size: 200% 100%;
     animation: gradient 5s ease infinite;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -688,23 +687,19 @@ footer{
         background-position: 0% 50%;
     }
 }
-
 .form-container button:active {
     scale: 0.95;
 }
-
 .form-container .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .form-container .form-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-
 .form-container .form-group label {
     display: block;
     margin-bottom: 5px;
@@ -712,7 +707,6 @@ footer{
     font-weight: 600;
     font-size: 15px;
 }
-
 .form-container .form-group input {
     width: 100%;
     padding: 12px 16px;
@@ -722,7 +716,6 @@ footer{
     background-color: transparent;
     border: 1px solid #414141;
 }
-
 .form-container .form-group textarea {
     width: 100%;
     padding: 12px 16px;
@@ -734,21 +727,17 @@ footer{
     background-color: transparent;
     font-family: inherit;
 }
-
 .form-container .form-group input::placeholder {
     opacity: 0.5;
 }
-
 .form-container .form-group input:focus {
     outline: none;
     border-color: #000000;
 }
-
 .form-container .form-group textarea:focus {
     outline: none;
     border-color: #000000;
 }
-
 .form-container .form-submit-btn {
     display: flex;
     align-items: flex-start;
@@ -767,7 +756,6 @@ footer{
     border-radius: 6px;
     transition: all 1s ease;
 }
-
 .form-container .form-submit-btn:hover {
     background-color: #fff;
     border-color: #fff;
@@ -776,7 +764,6 @@ footer{
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
 }
-
 .Text_Contacto {
     font-size: 24px;
     color: #ffffff;
@@ -797,14 +784,12 @@ footer{
     margin-right: 15%;
     line-height: 1.5;
 }
-
 .Bg_Text_Contacto {
     background: rgb(170,33,33);
     background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     align-items: center;
 }
-
 .social-icons-container-contacto {
     display: flex;
     position: absolute;
@@ -828,7 +813,7 @@ footer{
     margin-bottom: 100%;
     margin-top: -40%;
 }
-/*Prueba*/
+/*Form Contacto*/
 
 /*CAMBIO DE ANCHO Pc Pequeña*/
 @media (max-width: 1366px) {
@@ -920,6 +905,30 @@ footer{
         font-size: 17px;
     }
     /*Btn Mas De Mi*/
+
+    /*Form Contacto*/
+    .social-icons-container-contacto {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        transform: scale(1.5);
+        margin-left: 40%;
+        margin-top: -30%;
+        filter: grayscale(90%);
+        transition: 1s ease;
+    }
+    .Text_Contacto {
+        margin-top: 10%;
+        margin-bottom: 80%;
+    }
+    .form-container {
+        width: 500px;
+        margin-top: -30%;
+        margin-left: -20px;
+    }
+    /*Form Contacto*/
 }
 /*CAMBIO DE ANCHO Pc Pequeña*/
 
