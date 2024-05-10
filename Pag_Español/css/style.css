@@ -1,0 +1,1063 @@
+/*Log Cargando*/
+#loading-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 33, 33);
+    background: radial-gradient(circle, rgb(170, 33, 33) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+#loading-message img {
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+/*Log Cargando*/
+
+/*Bar Menu*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #8b281d;
+}
+::selection{
+    background: rgb(0,123,255,0.3);
+}
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    background-color: #ffffff00;
+}
+.navbar.sticky{
+    padding: 10px 0;
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    height: 50px;
+    width: 140px;
+}
+.navbar .menu-list{
+    display: inline-flex;
+}
+.menu-list li{
+    list-style: none;
+    margin-top: 10px;
+}
+.menu-list li a{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.menu-list li a:hover{
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px 5px;
+    border: solid 2px #fff ;
+    background-color: #8b281d;
+    padding: 5px 5px;
+    box-shadow: 0 0 7px 7px rgba(224, 224, 224, 0.419);
+}
+.lenguaje li {
+    list-style: none;
+    margin-top: 10px;
+}
+.lenguaje li a{
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.lenguaje li i{
+    color: #ffffff;
+    font-size: 28px;
+    margin-left: 27px;
+    margin-top: -3px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.lenguaje li i:hover{
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px 5px;
+    border: solid 2px #fff ;
+    background-color: #8b281d;
+    padding: 5px 5px;
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.419);
+    transition: all 0.5s ease;
+}
+.espanol li {
+    list-style: none;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.espanol li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.espanol li a:hover {
+    font-size: 15px;
+}
+.ingles li {
+    list-style: none;
+}
+.ingles li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.ingles li a:hover {
+    font-size: 15px;
+}
+.barranolink {
+    pointer-events: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+.btn-active .active{
+    pointer-events: none;
+    color: #ffffff;
+    border-radius: 5px 5px;
+    border: solid 2px #fff ;
+    background-color: #8b281d;
+    padding: 5px 5px;
+    box-shadow: 0 0 7px 7px rgba(105, 105, 105, 0.419);
+}
+.banner{
+    height: 100vh;
+    background: url("banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about{
+    padding: 40px 0;
+}
+.about .title{
+    font-size: 35px;
+    font-weight: 700;
+}
+.about p{
+    padding-top: 20px;
+    text-align: justify;
+}
+.icon{
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.navbar.sticky .icon.cancel-btn{
+    top: 10px;
+}
+/*Bar Menu*/
+
+/*Foto Principal*/
+.mifoto img {
+    height: 400px;
+    width: 280px;
+    margin: 180px 290px;
+    border-radius: 70px;
+    border: solid #000000 5px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.509);
+    margin-right: 30px; /* Espacio a la derecha de la imagen */
+}
+.mifoto {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    margin-bottom: -120px;
+    display: flex;
+    align-items: center;
+}
+.mifoto img:hover {
+    height: 410px;
+    width: 290px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.85);
+}
+/*Foto Principal*/
+
+/*Sobre Mi*/
+.mifoto .sobre_mi {
+    flex: 1; /* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 100px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.mifoto .sobre_mi:hover {
+    transition: all 0.5s ease;
+    font-size: 21px;
+}
+
+.proyectos {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    height: 980px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.proyectos .text_proyectos {
+    position: absolute; /* Permite que el párrafo ocupe el espacio restante */
+    font-size: 24px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: -25%;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.proyectos .text_proyectos:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+
+.text_proyectos_1 {
+    position: absolute;/* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 55%;
+    margin-left: 100px;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.text_proyectos_1:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+.text_proyectos_2 {
+    position: absolute;/* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 100px;
+    margin-left: 55%;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.text_proyectos_2:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+/*Sobre Mi*/
+
+/*Btn Explorar*/
+.button_explorar1 i{
+    font-size: 15px;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    padding-left: 8px;
+    left: 260px;
+    top: 270px;
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+    transition: all 0.5s ease;
+}
+.button_explorar1 {
+    background-color: #00000000;
+    border: none;
+}
+
+.button_explorar2 i{
+    font-size: 15px;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    padding-left: 8px;
+    left: 730px;
+    top: 270px;
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+    transition: all 0.5s ease;
+}
+.button_explorar2 {
+    background-color: #00000000;
+    border: none;
+}
+
+.button_explorar1 i:hover {
+    color: #000;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    transform: rotate(-10deg);
+}
+
+.button_explorar2 i:hover {
+    color: #000;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    transform: rotate(-10deg);
+}
+/*Btn Explorar*/
+
+/*Btn Mas De Mi*/
+.animated-button {
+    margin-left: 58%;
+    margin-top: -100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border-color: transparent;
+    font-size: 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #ffffff;
+    z-index: 9;
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: rgb(0, 0, 0);
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #000000;
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+/*Btn Mas De Mi*/
+
+/*Footer*/
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    bottom: auto;
+    left: 0;
+    padding: 2rem 8%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-producto {
+    margin-top: 570px;
+}
+
+.text-redes {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+
+}
+
+.logofooter{
+    height: 90px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 4px solid rgb(170,33,33);
+    margin:1rem;
+    box-shadow: 0 0 5px 5pX rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+    border: 4px solid rgb(85, 222, 222);
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.fa-instagram {
+    color: #ffffff;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 30px;
+}
+.fa-square-facebook {
+    color: #ffffff;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 30px;
+}
+.fa-youtube {
+    color: #ffffff;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 30px;
+}
+.footer-menu-container{
+    list-style: none;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.footer-menu-container li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    background-color: #000;
+    padding: 7px 13px;
+    border-radius: 30px;   
+    position: relative;
+}
+
+.menu-item:hover{
+    opacity: 7;
+    background-color: #66CFFF;
+}
+
+.copyright{
+    cursor: none;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #B03A2E;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+.copyright:hover {
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+/*Footer*/
+
+/*Separador1*/
+.Separador_1 {
+    margin-left: 300px;
+    margin-top: -210px;
+    width: 800px;
+}
+/*Separador1*/
+
+/*Btn Mas De Mi*/
+.MasDeMiOculto {
+    display: none;
+}
+.mostrado {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    font-size: 20px;
+    visibility: visible;
+    opacity: 0;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.8s ease-in-out;
+    box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    border: 4px solid rgba(170, 33, 33, 0.856);
+    transition: all 0.8s ease;
+    width: 55%;
+}
+.mostrado:hover{
+    font-size: 21px;
+    transition: all 1s ease;
+}
+
+.mostrado.visible {
+    opacity: 1;
+}
+/*Btn Mas De Mi*/
+
+/*Prueba*/
+.form-container {
+    width: 700px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#000000, #ffffff) border-box;
+    border: 4px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 1s ease;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+    transition: all 0.1s ease;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.Text_Contacto {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 55%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5;
+}
+.Text_Contacto1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -95%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5;
+}
+
+.Bg_Text_Contacto {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.social-icons-container-contacto {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    transform: scale(1.9);
+    margin-left: 44%;
+    margin-top: -20%;
+    filter: grayscale(90%);
+    transition: 1s ease;
+}
+.social-icons-container-contacto a :hover {
+    transform: rotate(360deg);
+    transition: 1s ease;
+}
+
+#form-container-bg {
+    display: flex;
+    margin-left: 32%;
+    margin-bottom: 100%;
+    margin-top: -40%;
+}
+/*Prueba*/
+
+/*CAMBIO DE ANCHO Pc Pequeña*/
+@media (max-width: 1366px) {
+    body.disabledScroll{
+    overflow: hidden;
+    }
+    
+
+    /*Sobre Mi*/
+    .mifoto img {
+        height: 400px;
+        width: 280px;
+        margin: 180px 200px;
+    }
+    .mifoto img:hover {
+        height: 410px;
+        width: 290px;
+    }
+    .mifoto { 
+        padding-bottom: 100px;
+        background-size: auto 100%;
+    }
+    .mifoto .sobre_mi {
+        font-size: 17px;
+        position: absolute;
+        display: block;
+        left: 500px;
+        right: -50px;
+        margin-top: 10px;
+    }
+    .mifoto .sobre_mi:hover {
+        font-size: 18px;
+    }
+    /*Sobre Mi*/
+    
+    /*Btn Mas De Mi*/
+    .animated-button {
+        margin-left: 60%;
+        margin-top: -180px;
+    }
+    /*Btn Mas De Mi*/
+    
+    /*Text Proyectos*/
+    .proyectos .text_proyectos {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-top: -70%;
+    }
+    .text_proyectos_1 {
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-top: -200px;
+    }
+    .text_proyectos_2 {
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-top: 700px;
+    }
+    .proyectos {
+        height: 1400px;
+    }
+    .button_explorar1 {
+        margin-left: -23%;
+        margin-top: -300px;
+    }
+    .button_explorar2 {
+        margin-left: -605px;
+        margin-top: 550px;
+    }
+    
+    /*Separador1*/
+    .Separador_1 {
+        margin-left: 55%;
+        margin-top: -500px;
+        width: 600px;
+        display: flex;
+    }
+    /*Separador1*/
+
+    /*Btn Mas De Mi*/
+    .mostrado {
+        font-size: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+    }
+    .mostrado:hover{
+        font-size: 17px;
+    }
+    /*Btn Mas De Mi*/
+}
+/*CAMBIO DE ANCHO Pc Pequeña*/
+
+/*CAMBIO DE ANCHO Phones*/
+@media (max-width: 868px) {
+    body.disabledScroll{
+    overflow: hidden;
+    }
+    /*Bar Menu*/
+    .icon{
+        color: #ffffff;
+        display: block;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        z-index: 9;
+        transition: all 0.5s ease;
+    }
+    .icon:hover {
+        box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
+        transition: all 0.5s ease;
+        border-radius: 50%;
+        font-size: 15px;
+        transition: all 0.5s ease;
+        transform: rotate(360deg);
+    }
+    .icon.cancel-btn{
+        display: none;
+    }
+    .icon.cancel-btn.show{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgb(170,33,33);
+        background: linear-gradient(45deg, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+        transition: all 0.3s ease;
+    }
+    .navbar.sticky .menu-list{
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+    }
+    .navbar .menu-list.active{
+        clip-path: circle(75%);
+    }
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+        font-size: 23px;
+    }
+    .barranolink {
+        display: none;
+    }
+    /*Bar Menu*/
+
+    /*Sobre Mi*/
+    .mifoto img {
+        height: 300px;
+        width: 280px;
+        margin: 120px 90px;
+    }
+    .mifoto img:hover {
+        height: 300px;
+        width: 280px;
+    }
+    .mifoto { 
+        padding-bottom: 500px;
+        background-size: auto 100%;
+    }
+    .mifoto .sobre_mi {
+        font-size: 17px;
+        position: absolute;
+        display: block;
+        left: 50px;
+        right: -50px;
+        margin-top: 700px;
+    }
+    .mifoto .sobre_mi:hover {
+        font-size: 17px;
+    }
+    /*Sobre Mi*/
+    
+    /*Btn Mas De Mi*/
+    .animated-button {
+        margin-left: 110px;
+        margin-top: -100px;
+    }
+    /*Btn Mas De Mi*/
+    
+    /*Text Proyectos*/
+    .proyectos .text_proyectos {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: -1000px;
+    }
+    .text_proyectos_1 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: -200px;
+    }
+    .text_proyectos_2 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 700px;
+    }
+    .proyectos {
+        height: 1500px;
+    }
+    .button_explorar1 {
+        margin-left: -130px;
+        margin-top: -300px;
+    }
+    .button_explorar2 {
+        margin-left: -605px;
+        margin-top: 500px;
+    }
+    
+    /*Separador1*/
+    .Separador_1 {
+        margin-left: 0px;
+        margin-top: -480px;
+        width: 400px;
+        display: flex;
+    }
+    /*Separador1*/
+    
+}
+/*CAMBIO DE ANCHO Phones*/

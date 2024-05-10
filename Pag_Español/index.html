@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StickCode</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/70e22c09f9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="loading-message">
+        <img src="./img/Sin-unscreen.gif" alt="Cargando...">
+    </div>
+
+
+<!-- In Cabezera -->
+    <header>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <img src="./img/logo_blanco.png" alt="StickCode">
+                </div>
+                    
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                        <li class="btn-active"><a class="active"href="">Inicio</a></li>
+                            <a class="barranolink"href="#">ㅤ/</a>
+                        <li><a href="./proyectos.html">Proyectos</a></li>
+                            <a class="barranolink"href="#">ㅤ/</a>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                            <a class="barranolink" href=#>ㅤ/</a>
+                    <div>
+                        <ul class="lenguaje" onclick="toggleLists()">
+                            <li><i class="fa-solid fa-earth-americas"></i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="espanol" style="display: none;">
+                            <li><a href="#">Español</a></li>
+                        </ul>
+                        <ul class="ingles" style="display: none;">
+                            <li><a href="#">Inglés</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+            </div>
+        </nav>
+<!-- Fn Cabezera -->
+
+<!-- In Contenido -->
+        <div class="mifoto">
+            <img src="./img/yo_inicio.jpg" alt="" />
+            <p class="sobre_mi">
+                ¡Hola a todos! <br>
+
+                Me llamo Johan mas conocido como Stick Code y me apasiona el mundo <br> de la tecnología y la programación. <br> Desde muy joven, he estado inmerso en el fascinante universo <br> del desarrollo de software y la innovación tecnológica. <br>
+
+                Una de mis grandes pasiones es explorar nuevas tecnologías y <br> aprender sobre diferentes lenguajes de programación.
+            </p>
+            
+        </div>
+        <div>
+            <button id="mostrarTexto" class="animated-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg>
+                <span class="text">Mas De Mi</span>
+                <span class="circle"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="textoOculto" class="MasDeMiOculto">
+            ¡Hola! Soy Johan Stiven Arateco, y mi fascinación por la tecnología y el desarrollo de software ha sido una constante en mi vida desde que tengo memoria. Nací el 16 de marzo de 2005 en la ciudad de Facatativá, ubicada en el departamento de Cundinamarca, Colombia, y desde entonces, he estado profundamente arraigado en el emocionante mundo de la innovación tecnológica. <br>
+
+            Me gradué como técnico en automatización en el Colegio Juan Luis Londoño de la Cuesta, donde adquirí una sólida base en sistemas automatizados. Luego, continué mi formación en el Instituto SENA, obteniendo el título como técnico en Programación de Software, donde me sumergí en una variedad de lenguajes de programación y metodologías de desarrollo. <br>
+
+            Una de mis mayores pasiones es explorar nuevas tecnologías y aprender sobre diferentes lenguajes de programación. Trabajo constantemente en mantener mi página web actualizada con mis proyectos personales y colaborativos. Mi marca, Stick Code, representa mi compromiso con la excelencia y la innovación en el campo de la programación. <br>
+
+            Además de mi trabajo técnico, me concentro en construir una presencia significativa en línea. Utilizo las redes sociales como una plataforma para compartir conocimientos, experiencias y proyectos con otros entusiastas de la tecnología. Mi objetivo es inspirar a otros y fomentar una comunidad de aprendizaje colaborativo. <br>
+
+            Con una sólida base técnica, una mentalidad innovadora y un compromiso inquebrantable con la excelencia, estoy emocionado de dejar mi huella en el mundo del desarrollo de software y la tecnología.
+        </div>
+<!-- Fn Contenido -->
+
+<!-- In Footer -->
+        <footer>
+			<img src="./img/logo_blanco.png" alt="" class="logofooter">
+			<p class="text-redes">
+				REDES SOCIALES
+			</p>
+			<div class="social-icons-container">
+				<a href="https://www.instagram.com/stickcodeofficial/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram" target="_blank"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61556241119559&mibextid=ZbWKwL" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://m.youtube.com/channel/UCrN57bZGkahoBuKZoErSRxw" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+			</div>
+		
+			<span class="copyright">&copy; 2024 - STICK | CODE &copy;</span>
+		</footer>
+<!-- Fn Footer -->
+
+        <script src="./js/scripts.js"></script>
+        
+    </header>
+    
+</body>
+</html>
