@@ -210,6 +210,7 @@
 }
 /*Bar Menu*/
 
+/*PAG INICIO*/
 /*Foto Principal*/
 .mifoto img {
     height: 400px;
@@ -254,7 +255,138 @@
     transition: all 0.5s ease;
     font-size: 21px;
 }
+/*Sobre Mi*/
 
+/*Btn Mas De Mi*/
+.animated-button {
+    margin-left: 58%;
+    margin-top: -100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border-color: transparent;
+    font-size: 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #ffffff;
+    z-index: 1;
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: rgb(0, 0, 0);
+}
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #000000;
+}
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+.MasDeMiOculto {
+    display: none;
+}
+.mostrado {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    font-size: 20px;
+    visibility: visible;
+    opacity: 0;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.8s ease-in-out;
+    box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    border: 4px solid rgba(170, 33, 33, 0.856);
+    transition: all 0.8s ease;
+    width: 55%;
+}
+.mostrado:hover{
+    font-size: 21px;
+    transition: all 1s ease;
+}
+
+.mostrado.visible {
+    opacity: 1;
+}
+/*Btn Mas De Mi*/
+/*PAG INICIO*/
+
+/*PAG PROYECTOS*/
+/*Proyectos*/
 .proyectos {
     background: rgb(170,33,33);
     background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
@@ -320,7 +452,15 @@
     transition: all 0.5s ease;
     transform: scale(1.05);
 }
-/*Sobre Mi*/
+/*Proyectos*/
+
+/*Separador1*/
+.Separador_1 {
+    margin-left: 70%;
+    margin-top: -210px;
+    width: 800px;
+}
+/*Separador1*/
 
 /*Btn Explorar*/
 .button_explorar1 i{
@@ -336,7 +476,7 @@
     position: relative;
     cursor: pointer;
     padding-left: 8px;
-    left: 260px;
+    left: -290%;
     top: 270px;
     background-color: #12121200;
     box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
@@ -362,7 +502,7 @@
     position: relative;
     cursor: pointer;
     padding-left: 8px;
-    left: 730px;
+    left: 430px;
     top: 270px;
     background-color: #12121200;
     box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
@@ -391,101 +531,9 @@
     transform: rotate(-10deg);
 }
 /*Btn Explorar*/
+/*PAG PROYECTOS*/
 
-/*Btn Mas De Mi*/
-.animated-button {
-    margin-left: 58%;
-    margin-top: -100px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 16px 36px;
-    border-color: transparent;
-    font-size: 20px;
-    border-radius: 100px;
-    font-weight: 600;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    background-color: #12121200;
-    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
-    color: #ffffff;
-    border: 4px solid rgb(170,33,33);
-}
-
-.animated-button svg {
-    position: absolute;
-    width: 24px;
-    fill: #ffffff;
-    z-index: 9;
-    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .arr-1 {
-    right: 16px;
-}
-
-.animated-button .arr-2 {
-    left: -25%;
-}
-
-.animated-button .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-    
-}
-
-.animated-button .text {
-    position: relative;
-    z-index: 1;
-    transform: translateX(-12px);
-    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button:hover {
-    box-shadow: 0 0 0 12px transparent;
-    color: #212121;
-    border-radius: 12px;
-    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
-}
-
-.animated-button:hover .arr-1 {
-    right: -25%;
-}
-
-.animated-button:hover .arr-2 {
-    left: 16px;
-}
-
-.animated-button:hover .text {
-    transform: translateX(12px);
-}
-
-.animated-button:hover svg {
-    fill: rgb(0, 0, 0);
-}
-
-.animated-button:active {
-    scale: 0.95;
-    box-shadow: 0 0 0 4px #000000;
-}
-
-.animated-button:hover .circle {
-    width: 220px;
-    height: 220px;
-    opacity: 1;
-}
-/*Btn Mas De Mi*/
-
+/*TODAS LAS PAG*/
 /*Footer*/
 footer{
     width: 100%;
@@ -610,53 +658,9 @@ footer{
     transition: all 0.5s ease;
 }
 /*Footer*/
+/*TODAS LAS PAG*/
 
-/*Separador1*/
-.Separador_1 {
-    margin-left: 300px;
-    margin-top: -210px;
-    width: 800px;
-}
-/*Separador1*/
-
-/*Btn Mas De Mi*/
-.MasDeMiOculto {
-    display: none;
-}
-.mostrado {
-    letter-spacing: 2px;
-    line-height: 1.5;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    z-index: 9;
-    font-size: 20px;
-    visibility: visible;
-    opacity: 0;
-    display: block;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.8s ease-in-out;
-    box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
-    border-radius: 40px;
-    border: 4px solid rgba(170, 33, 33, 0.856);
-    transition: all 0.8s ease;
-    width: 55%;
-}
-.mostrado:hover{
-    font-size: 21px;
-    transition: all 1s ease;
-}
-
-.mostrado.visible {
-    opacity: 1;
-}
-/*Btn Mas De Mi*/
-
+/*PAG CONTACTO/
 /*Form Contacto*/
 .form-container {
     width: 700px;
@@ -732,21 +736,21 @@ footer{
 }
 .form-container .form-group input:focus {
     outline: none;
-    border-color: #000000;
+    border-color: #8b281d;
 }
 .form-container .form-group textarea:focus {
     outline: none;
-    border-color: #000000;
+    border-color: #8b281d;
 }
 .form-container .form-submit-btn {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     align-self: flex-start;
-    color: #717171;
+    color: #ffffff;
     font-weight: 600;
     width: 40%;
-    background: #313131;
+    background: #8b281d;
     border: 1px solid #414141;
     padding: 12px 16px;
     font-size: inherit;
@@ -758,6 +762,7 @@ footer{
 }
 .form-container .form-submit-btn:hover {
     background-color: #fff;
+    color: #000;
     border-color: #fff;
     transition: all 0.1s ease;
     border-radius: 10px; /* Borde redondeado */
@@ -773,6 +778,18 @@ footer{
     margin-left: 10%;
     margin-right: 10%;
     line-height: 1.5;
+}
+.Text_Contacto_redes {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -52%;
+    margin-bottom: 50%;
+    word-spacing: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1;
 }
 .Text_Contacto1 {
     font-size: 24px;
@@ -814,38 +831,535 @@ footer{
     margin-top: -40%;
 }
 /*Form Contacto*/
+/*PAG CONTACTO*/
 
-/*CAMBIO DE ANCHO Pc Pequeña*/
-@media (max-width: 1366px) {
+@media (min-width: 1024px) {
     body.disabledScroll{
     overflow: hidden;
     }
-    
+/*PAG INICIO*/
+/*Foto Principal*/
+.mifoto img {
+    height: 400px;
+    width: 280px;
+    margin: 180px 290px;
+    border-radius: 70px;
+    border: solid #000000 5px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.509);
+    margin-right: 30px; /* Espacio a la derecha de la imagen */
+}
+.mifoto {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    margin-bottom: -120px;
+    display: flex;
+    align-items: center;
+}
+.mifoto img:hover {
+    height: 410px;
+    width: 290px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.85);
+}
+/*Foto Principal*/
 
+/*Sobre Mi*/
+.mifoto .sobre_mi {
+    flex: 1; /* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 100px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.mifoto .sobre_mi:hover {
+    transition: all 0.5s ease;
+    font-size: 21px;
+}
+/*Sobre Mi*/
+
+/*Btn Mas De Mi*/
+.animated-button {
+    margin-left: 58%;
+    margin-top: -100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border-color: transparent;
+    font-size: 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #ffffff;
+    z-index: 9;
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: rgb(0, 0, 0);
+}
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #000000;
+}
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+.MasDeMiOculto {
+    display: none;
+}
+.mostrado {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    font-size: 20px;
+    visibility: visible;
+    opacity: 0;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.8s ease-in-out;
+    box-shadow: 0 0 10px 10pX rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    border: 4px solid rgba(170, 33, 33, 0.856);
+    transition: all 0.8s ease;
+    width: 55%;
+}
+.mostrado:hover{
+    font-size: 21px;
+    transition: all 1s ease;
+}
+
+.mostrado.visible {
+    opacity: 1;
+}
+/*Btn Mas De Mi*/
+/*PAG INICIO*/
+
+/*PAG PROYECTOS*/
+/*Proyectos*/
+.proyectos {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    height: 980px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.proyectos .text_proyectos {
+    position: absolute; /* Permite que el párrafo ocupe el espacio restante */
+    font-size: 24px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: -25%;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.proyectos .text_proyectos:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+
+.text_proyectos_1 {
+    position: absolute;/* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 55%;
+    margin-left: 100px;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.text_proyectos_1:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+.text_proyectos_2 {
+    position: absolute;/* Permite que el párrafo ocupe el espacio restante */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    color: #ffffff; /* Color de texto del párrafo */
+    margin-right: 100px;
+    margin-left: 55%;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.text_proyectos_2:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+/*Proyectos*/
+
+/*Separador1*/
+.Separador_1 {
+    margin-left: 70%;
+    margin-top: -210px;
+    width: 800px;
+}
+/*Separador1*/
+
+/*Btn Explorar*/
+.button_explorar1 i{
+    font-size: 15px;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    padding-left: 8px;
+    left: -290%;
+    top: 270px;
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+    transition: all 0.5s ease;
+}
+.button_explorar1 {
+    background-color: #00000000;
+    border: none;
+}
+
+.button_explorar2 i{
+    font-size: 15px;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    padding-left: 8px;
+    left: 430px;
+    top: 270px;
+    background-color: #12121200;
+    box-shadow: 0 0 10px 5pX rgb(0, 0, 0);
+    color: #ffffff;
+    border: 4px solid rgb(170,33,33);
+    transition: all 0.5s ease;
+}
+.button_explorar2 {
+    background-color: #00000000;
+    border: none;
+}
+
+.button_explorar1 i:hover {
+    color: #000;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    transform: rotate(-10deg);
+}
+
+.button_explorar2 i:hover {
+    color: #000;
+    box-shadow: 0 0 10px 10pX rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    transform: rotate(-10deg);
+}
+/*Btn Explorar*/
+/*PAG PROYECTOS*/
+
+/*PAG CONTACTO/
+/*Form Contacto*/
+.form-container {
+    width: 700px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#000000, #ffffff) border-box;
+    border: 4px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.form-container button:active {
+    scale: 0.95;
+}
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #8b281d;
+}
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #8b281d;
+}
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    color: #ffffff;
+    font-weight: 600;
+    width: 40%;
+    background: #8b281d;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 1s ease;
+}
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    transition: all 0.1s ease;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+.Text_Contacto {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 55%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5;
+}
+.Text_Contacto_redes {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -52%;
+    margin-bottom: 50%;
+    word-spacing: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1;
+}
+.Text_Contacto1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -95%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5;
+}
+.Bg_Text_Contacto {
+    background: rgb(170,33,33);
+    background: radial-gradient(circle, rgba(170,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+}
+.social-icons-container-contacto {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    transform: scale(1.9);
+    margin-left: 44%;
+    margin-top: -20%;
+    filter: grayscale(90%);
+    transition: 1s ease;
+}
+.social-icons-container-contacto a :hover {
+    transform: rotate(360deg);
+    transition: 1s ease;
+}
+
+#form-container-bg {
+    display: flex;
+    margin-left: 32%;
+    margin-bottom: 100%;
+    margin-top: -40%;
+}
+/*Form Contacto*/
+/*PAG CONTACTO*/
+}
+/*CAMBIO DE ANCHO Tablets*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body.disabledScroll{
+    overflow: hidden;
+    }
     /*Sobre Mi*/
     .mifoto img {
         height: 400px;
         width: 280px;
-        margin: 180px 200px;
+        margin: 180px 150px;
     }
     .mifoto img:hover {
-        height: 410px;
-        width: 290px;
+        transform: scale(1.1);
     }
     .mifoto { 
         padding-bottom: 100px;
         background-size: auto 100%;
     }
     .mifoto .sobre_mi {
-        font-size: 17px;
+        font-size: 14px;
         position: absolute;
         display: block;
-        left: 500px;
+        left: 450px;
         right: -50px;
-        margin-top: 10px;
     }
     .mifoto .sobre_mi:hover {
-        font-size: 18px;
+        font-size: 14px;
     }
     /*Sobre Mi*/
     
@@ -858,9 +1372,10 @@ footer{
     
     /*Text Proyectos*/
     .proyectos .text_proyectos {
-        margin-right: 100px;
-        margin-left: 100px;
-        margin-top: -70%;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-top: -90%;
+        font-size: 20px;
     }
     .text_proyectos_1 {
         margin-right: 300px;
@@ -876,33 +1391,35 @@ footer{
         height: 1400px;
     }
     .button_explorar1 {
-        margin-left: -23%;
+        margin-left: 13%;
         margin-top: -300px;
     }
     .button_explorar2 {
-        margin-left: -605px;
+        margin-left: -94%;
         margin-top: 550px;
     }
     
     /*Separador1*/
     .Separador_1 {
-        margin-left: 55%;
-        margin-top: -500px;
-        width: 600px;
+        margin-left: 24%;
+        margin-top: -570px;
+        width: 700px;
         display: flex;
     }
     /*Separador1*/
 
     /*Btn Mas De Mi*/
     .mostrado {
-        font-size: 16px;
+        font-size: 14px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 65%;
+        overflow: auto;
+        overflow-y: auto;
     }
     .mostrado:hover{
-        font-size: 17px;
+        font-size: 14px;
     }
     /*Btn Mas De Mi*/
 
@@ -914,26 +1431,33 @@ footer{
         align-items: center;
         margin-bottom: 1rem;
         transform: scale(1.5);
-        margin-left: 40%;
-        margin-top: -30%;
+        margin-left: 39%;
+        margin-top: -38%;
         filter: grayscale(90%);
         transition: 1s ease;
     }
     .Text_Contacto {
         margin-top: 10%;
-        margin-bottom: 80%;
+        margin-bottom: 100%;
+
+    }
+    .Text_Contacto_redes {
+        font-size: 21px;
+        word-spacing: 30px;
+        margin-top: -96%;
+        margin-bottom: 90%;
     }
     .form-container {
         width: 500px;
-        margin-top: -30%;
-        margin-left: -20px;
+        margin-top: -50%;
+        margin-left: -60px;
     }
     /*Form Contacto*/
 }
-/*CAMBIO DE ANCHO Pc Pequeña*/
+/*CAMBIO DE ANCHO Tablets*/
 
 /*CAMBIO DE ANCHO Phones*/
-@media (max-width: 868px) {
+@media (max-width: 767px) {
     body.disabledScroll{
     overflow: hidden;
     }
@@ -1029,40 +1553,65 @@ footer{
         margin-left: 110px;
         margin-top: -100px;
     }
+    .mostrado {
+        top: 45%;
+        font-size: 15px;
+        width: 70%;
+        height: 70%;
+        overflow: auto;
+        overflow-y: auto;
+    }
+    .mostrado:hover{
+        font-size: 15px;
+    }
     /*Btn Mas De Mi*/
     
     /*Text Proyectos*/
     .proyectos .text_proyectos {
+        font-size: 18px;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: -1000px;
     }
+    .proyectos .text_proyectos:hover {
+        transform: scale(1.05);
+    }
     .text_proyectos_1 {
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: -200px;
+        font-size: 18px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: -250px;
+    }
+    .text_proyectos_1:hover {
+        transform: scale(1.05);
     }
     .text_proyectos_2 {
-        margin-right: 10px;
-        margin-left: 10px;
+        font-size: 18px;
+        margin-right: 30px;
+        margin-left: 30px;
         margin-top: 700px;
+    }
+    .text_proyectos_2:hover {
+        transform: scale(1.05);
     }
     .proyectos {
         height: 1500px;
     }
-    .button_explorar1 {
-        margin-left: -130px;
-        margin-top: -300px;
+    .button_container1 {
+        position: absolute;
+        right: -300px;
+        top: 60%;
     }
-    .button_explorar2 {
-        margin-left: -605px;
-        margin-top: 500px;
+    .button_container2 {
+        position: absolute; /* Posición absoluta */
+        left: -70%; /* Ajusta la distancia desde el borde izquierdo */
+        top: 110%;
     }
     
     /*Separador1*/
     .Separador_1 {
-        margin-left: 0px;
-        margin-top: -480px;
+        margin-left: 10px;
+        margin-top: -500px;
         width: 400px;
         display: flex;
     }
