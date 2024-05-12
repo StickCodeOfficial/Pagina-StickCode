@@ -1569,8 +1569,8 @@ footer{
     /*Text Proyectos*/
     .proyectos .text_proyectos {
         font-size: 18px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 10%;
+        margin-left: 10%;
         margin-top: -1000px;
     }
     .proyectos .text_proyectos:hover {
@@ -1578,8 +1578,8 @@ footer{
     }
     .text_proyectos_1 {
         font-size: 18px;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
         margin-top: -250px;
     }
     .text_proyectos_1:hover {
@@ -1587,8 +1587,8 @@ footer{
     }
     .text_proyectos_2 {
         font-size: 18px;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
         margin-top: 700px;
     }
     .text_proyectos_2:hover {
@@ -1597,13 +1597,14 @@ footer{
     .proyectos {
         height: 1500px;
     }
-    .button_container1 {
-        position: absolute;
-        right: -300px;
-        top: 60%;
+    .button_explorar1 {
+        position: relative;
+        margin-left: 190%;
+        margin-top: -500%;
     }
-    .button_container2 {
-        position: absolute; /* Posición absoluta */
+    .button_explorar2 {
+        position: relative;
+        
         left: -70%; /* Ajusta la distancia desde el borde izquierdo */
         top: 110%;
     }
@@ -1638,7 +1639,7 @@ footer{
     .Text_Contacto1 {
         font-size: 18px;
         margin-top: -140%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         margin-left: 15%;
         margin-right: 15%;
     }
