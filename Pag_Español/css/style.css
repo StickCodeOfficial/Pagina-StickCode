@@ -1617,5 +1617,44 @@ footer{
     }
     /*Separador1*/
     
+    /*Form Contacto*/
+    .social-icons-container-contacto {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        transform: scale(1.3);
+        margin-left: 22%;
+        margin-top: -80%;
+        filter: grayscale(90%);
+        transition: 1s ease;
+    }
+    .Text_Contacto {
+        font-size: 18px;
+        margin-top: 30%;
+        margin-bottom: 270%;
+    }
+    .Text_Contacto1 {
+        font-size: 18px;
+        margin-top: -140%;
+        margin-bottom: 30%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .Text_Contacto_redes {
+        font-size: 18px;
+        word-spacing: 30px;
+        margin-top: -260%;
+        margin-bottom: 200%;
+    }
+    .form-container {
+        width: 500px;
+        margin-top: -170%;
+        margin-bottom: 100%;
+        margin-right: 20%;
+        margin-left: -25%;
+    }
+    /*Form Contacto*/
 }
 /*CAMBIO DE ANCHO Phones*/
