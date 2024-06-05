@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const btnExplorar = document.querySelector('.btn_explorar1');
+    if (btnExplorar) {  // Asegúrate de que el botón existe
+        btnExplorar.addEventListener('click', function() {
+            window.location.href = '../Pag_Español/proyectos_personales.html';
+        });
+    }
+});
+
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu-list");
@@ -76,4 +85,5 @@ document.getElementById('mostrarTexto').addEventListener('click', function(event
         texto.classList.toggle('visible');
     }, 50);
 });
+
 
