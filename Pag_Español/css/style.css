@@ -1617,7 +1617,7 @@ footer{
     
     /*Text Proyectos*/
     .proyectos .text_proyectos {
-        font-size: 18px;
+        font-size: 17px;
         margin-right: 10%;
         margin-left: 10%;
         margin-top: -1000px;
@@ -1626,7 +1626,7 @@ footer{
         transform: scale(1.05);
     }
     .text_proyectos_1 {
-        font-size: 18px;
+        font-size: 17px;
         margin-right: 10%;
         margin-left: 10%;
         margin-top: -250px;
@@ -1635,7 +1635,7 @@ footer{
         transform: scale(1.05);
     }
     .text_proyectos_2 {
-        font-size: 18px;
+        font-size: 17px;
         margin-right: 10%;
         margin-left: 10%;
         margin-top: 700px;
