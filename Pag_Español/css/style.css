@@ -705,6 +705,14 @@ footer{
     background-color: #ffffff;
     transition: all 0.5s ease;
 }
+
+.contador_vistas {
+    position: absolute;
+    display: flex;
+    margin-left: 40%;
+    margin-top: -3%;
+    
+}
 /*Footer*/
 /*TODAS LAS PAG*/
 
